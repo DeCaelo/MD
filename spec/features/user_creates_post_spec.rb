@@ -21,6 +21,5 @@ RSpec.describe "Creating post" do
     click_on "Publish"
 
     expect(page).to have_css ".error"
-    expect(current_path).to eq(new_post_path)
   end
 end
