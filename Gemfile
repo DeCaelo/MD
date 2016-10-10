@@ -14,6 +14,7 @@ gem 'devise'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.5'
+  gem 'poltergeist', '~> 1.8'
 end
 
 group :development do
@@ -24,7 +25,8 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '~> 2.5.0'
+  gem 'database_cleaner', '~> 1.5'
 end
 
 

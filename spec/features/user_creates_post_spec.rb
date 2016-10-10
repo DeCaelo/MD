@@ -5,7 +5,7 @@ RSpec.describe "Creating post" do
     visit root_path
     click_on "Write a story"
 
-    fill_in "Title", with: "My First Post"
+    fill_in "Title", with: "My first post"
     fill_in "Body", with: "Some awesome content"
     click_on "Publish"
 
@@ -16,7 +16,7 @@ RSpec.describe "Creating post" do
     visit root_path
     click_on "Write a story"
 
-    fill_in "Title", with: "My Second Post"
+    fill_in "Title", with: "My second post"
     fill_in "Body", with: ""
     click_on "Publish"
 
