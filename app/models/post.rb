@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
   validates :title, :body, presence: true
 
   belongs_to :user
@@ -6,6 +8,9 @@ class Post < ApplicationRecord
   has_many :tags, through: :taggings
 
   delegate :username, to: :user, allow_nil: true
+
+  # will_pagination configuration
+  self.per_page = 5
 
   def self.tagged_with(name)
     Tag.find_by!(name: name).posts

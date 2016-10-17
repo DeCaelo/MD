@@ -13,6 +13,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise'
 gem 'react-rails'
+gem "font-awesome-rails"
+gem 'will_paginate', '~> 3.1.0'
+gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+gem 'elasticsearch-rails', '~> 0.1.8'
+
+
 
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 gem "mini_magick"
